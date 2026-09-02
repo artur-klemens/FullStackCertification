@@ -6,9 +6,9 @@ A collection of prompts used for programming study assistance.
 
 ## Note Taking
 
-I will be studying a full stack development course and taking notes. I will be sending the notes in this session, and you don't need to do anything with them yet. Once I am done studying, I will ask you to gather the notes and save them in a markdown file: `~/Desktop/FullStack/Notes/new_notes.md`.
+I will be studying a full stack development course and taking notes. I will be sending the notes in this session, and you don't need to do anything with them yet. Once I am done studying, I will ask you to gather the notes and save them in a markdown file: `~/Local\ Storage/FullStackCertification/Notes/new_notes.md`.
 
-Before organizing, read the existing file at `~/Desktop/FullStack/Notes/python_notes.md`. Use its section order as the reference for logical topic ordering. Place each note under its appropriate section, following that same order. If a note belongs to a section that doesn't exist yet, insert the new section at a position that fits logically within the existing order — do not append everything to the end. You must not change any of the text I have written.
+Before organizing, read the existing file at `~/Local\ Storage/FullStackCertification/Notes/html_notes.md`. Use its section order as the reference for logical topic ordering. Place each note under its appropriate section, following that same order. If a note belongs to a section that doesn't exist yet, insert the new section at a position that fits logically within the existing order — do not append everything to the end. You must not change any of the text I have written.
 
 ---
 
