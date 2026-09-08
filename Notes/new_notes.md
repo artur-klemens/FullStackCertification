@@ -2,15 +2,37 @@
 
 ## HTML Basics
 
-- The div element is used for grouping HTML elements, mainly when you want them to share the same CSS style
-- "id" is an attribute than can add a unique identifier to every element, which can then be referenced in "Javascript" or "CSS"
-- "id"s should be unique and not reused; to target multiple elements: add the "class" attribute to them; to target a specific element: add "id"
-- To represent reserved characters (ex: < or >) in HTML, you must use entities (or character references; ex: &lt; &gt;). These two are named character references; decimal character references start with "&#" followed by 1 or more digits; hexadecimal character references start with "&x" followed by 1 or more ASCII hex digits. All of them end with ";"
+- You can add audio and video elements to an HTML page using `audio` and `video`
 
-## Links and External Resources
+## Audio and Video
 
-- The "script" element is used to embed executable code (Javascript). Example usage: "<script src="path-to-javascript-file.js"></script>"; it is best practice to link a script file there instead of writing it in the HTML document itself.
+- The `audio` element can have different attributes that control how it behaves: `src` for providing the audio file, `loop` to control if the audio loops (`loop` is a bool and doesn’t need a value)
+- The `controls` attribute in `audio` is also a bool that provides the user with controls to play/stop the media file.
+- The `video` element has a `width` attribute
+- The `video` element also has the bool attributes `loop` and `controls`
+- Both `audio` and `video` elements have the `muted` attribute, to control if the media is muted when the first playback starts
 
-## Semantic HTML
+## Video Formats
 
-- "div" should not be overused, because it has no semantic meaning; ex. "section" means one thing explicitly, and browsers know what to do when encountering this element
+- When it comes to `video` format support, it is browser dependent; so you need to provide multiple types of video, that the browser can select. The syntax is:
+
+```html
+  <source src="src-url-goes-here" type="video-type-goes-here" />
+```
+
+- Media types must be specified using a MIME format (ex. `video/mp4`)
+- All the popular video format types are: `video/mp4` `video/webm` `video/ogg` and `video/quicktime`
+
+## Media Considerations
+
+- When using media, you should consider: size, format and compression\
+
+## Images
+
+- Image formats for older browsers: PNG, JPEG; more modern formats: WEBP, AVIF
+- Images on the web are by default released under “All Rights Reserved”; use tools like Unsplash/Pixabay to find images with permissive licenses
+
+## SVG
+
+- SVGs are vector graphics, and they can be defined directly in HTML; they are useful when wanting to have custom icons on your page, e.g. for social media icons
+- SVG stores the data in XML format
