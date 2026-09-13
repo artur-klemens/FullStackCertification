@@ -4,6 +4,11 @@
 
 - You can add audio and video elements to an HTML page using `audio` and `video`
 
+## Links and External Resources
+
+- The target attribute on anchor / link elements determine where the page opens; \_self = current browsing context; \_blank = new context (e.g. new tab); \_parent = in parent of the current context; \_top = top-most context
+- Links can have five different states: `:link`, the default (unclicked) state; `:visited`;`:hover`; `:focus` when the link is focused using Tab; `:active` when clicked; the order listed here is also the order that must be specified in CSS
+
 ## Audio and Video
 
 - The `audio` element can have different attributes that control how it behaves: `src` for providing the audio file, `loop` to control if the audio loops (`loop` is a bool and doesn’t need a value)
@@ -22,6 +27,12 @@
 
 - Media types must be specified using a MIME format (ex. `video/mp4`)
 - All the popular video format types are: `video/mp4` `video/webm` `video/ogg` and `video/quicktime`
+
+## Iframes
+
+- iframes are replaced elements; replaced elements are elements whose contents are determined by an external source, rather than CSS (e.g. website, image, embedded video)
+- iframe can also be used to embed another HTML page directly
+- When embedding a video, the `allow` attribute defines an allowlist of features that the embedded content is allowed to use (e.g. autoplay, accelerometer, clipboard-write)
 
 ## Media Considerations
 
